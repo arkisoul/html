@@ -1,19 +1,20 @@
 /* Element/tag selectors  */
 body {
-    background-color: aliceblue;
-    margin: 0;
-    padding: 16px;
+  background-color: aliceblue;
+  margin: 0;
+  padding: 16px;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
+  font-size: 22px;
 }
-img  {
-    max-width: 100%;
-    height: auto;
+img {
+  max-width: 100%;
+  height: auto;
 }
 p {
-    font-size: 20px;
-    color: tomato;
+  font-size: 20px;
+  color: tomato;
 }
 /* ID selector */
 /* #aside-para {
@@ -49,7 +50,7 @@ p {
     color: white;
 } */
 /* Attribute Seletors */
-input {
+/* input {
     padding: 6px;
     height: 40px;
     width: 30%;
@@ -68,13 +69,14 @@ input[type="email"] {
 a[href="https://google.com"] {
     color: olive;
     font-size: 40px;
-}
-[title~="dummy"] { /* dummy dummy- dummya */
+} */
+/* dummy dummy- dummya */
+/* [title~="dummy"] {
     background-color: yellow;
     color: black;
-}
+} */
 /* dummy dummy- */
-[title|="dummy"] { 
+/* [title|="dummy"] { 
     background-color: orangered;
     color: white;
 }
@@ -91,6 +93,95 @@ a[href="https://google.com"] {
     background-color: aqua;
 }
 [title="dummy"] {
+    background-color: black;
+    color: white;
+} */
+div > p::first-letter {
+  font-size: 32px;
+}
+/* .text-green::first-line {
+  background-color: black;
+  color: white;
+} */
+span {
+  position: relative;
+  z-index: 1;
+}
+span::before {
+  content: "";
+  background-color: black;
+  width: 100%;
+  height: 4px;
+  bottom: 100%;
+  position: absolute;
+  z-index: -1;
+}
+span::after {
+  content: "after content";
+}
+span::selection {
+  background-color: lightgreen;
+}
+#aside-para::first-letter {
+  background-color: blueviolet;
+}
+code:hover {
+  font-size: large;
+  color: blue;
+}
+a:visited {
+  color: indianred;
+}
+input:focus {
+  border: 3px dotted black;
+  /* outline: none; */
+}
+a:active {
+  background-color: brown;
+  color: white;
+}
+.inside-div :first-child {
+  border: 2px dashed red;
+}
+.inside-div :last-child {
+    background-color: coral;
+    color: black;
+}
+.inside-div p:first-of-type {
+    font-size: 20px;
+    color: teal;
+}
+.inside-div span:first-of-type {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.inside-div span:last-of-type {
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.inside-div article:last-of-type {
+    padding: 12px;
+    margin: 12px;
+    box-shadow: 0 0 4px #000;
+}
+table {
+    border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;
+}
+table tr td, table tr th {
+    border: 1px solid black;
+}
+table tbody tr:nth-child(even) {
+    background-color: wheat;
+}
+table tbody tr:nth-child(odd) {
+    background-color: rgb(194, 138, 36);
+}
+table tbody tr:nth-child(2), table tbody tr:nth-child(5), table tbody tr:nth-child(7) {
+    background-color: rgb(84, 32, 226);
+}
+table tbody tr:nth-last-child(3n) {
     background-color: black;
     color: white;
 }
