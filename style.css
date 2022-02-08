@@ -1,0 +1,96 @@
+/* Element/tag selectors  */
+body {
+    background-color: aliceblue;
+    margin: 0;
+    padding: 16px;
+}
+a {
+    text-decoration: none;
+}
+img  {
+    max-width: 100%;
+    height: auto;
+}
+p {
+    font-size: 20px;
+    color: tomato;
+}
+/* ID selector */
+/* #aside-para {
+    font-size: 14px;
+    color: blueviolet;
+} */
+/* Class selctor */
+/* .text-orange {
+    color: orange;
+}
+.text-green {
+    color: green;
+} */
+/* Combinator selectors */
+/* Descendant */
+/* .inside-div p {
+    background-color: yellowgreen;
+    color: black;
+} */
+/* Direct Descendant */
+/* .inside-div > p {
+    background-color: black;
+    color: white;
+} */
+/* Adjacent sibling */
+/* .text-orange + p {
+    background-color: blue;
+    color: white;
+} */
+/* General sibling */
+/* .text-orange ~ p {
+    background-color: green;
+    color: white;
+} */
+/* Attribute Seletors */
+input {
+    padding: 6px;
+    height: 40px;
+    width: 30%;
+}
+[type="text"] {
+    border: 2px solid red;
+}
+input[type="email"] {
+    border: 6px solid #999;
+    border-radius: 8px;
+}
+[target] {
+    font-size: 30px;
+    color: turquoise;
+}
+a[href="https://google.com"] {
+    color: olive;
+    font-size: 40px;
+}
+[title~="dummy"] { /* dummy dummy- dummya */
+    background-color: yellow;
+    color: black;
+}
+/* dummy dummy- */
+[title|="dummy"] { 
+    background-color: orangered;
+    color: white;
+}
+[title^="dummy"] {
+    background-color: orangered;
+    color: white;
+}
+[title$="dummy"] {
+    background-color: blue;
+    color: white;
+}
+[title*="tex"] {
+    color: tomato;
+    background-color: aqua;
+}
+[title="dummy"] {
+    background-color: black;
+    color: white;
+}
