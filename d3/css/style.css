@@ -1,10 +1,19 @@
-* {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap");
+
+*, *::before, *::after {
     box-sizing: border-box;
 }
 body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
 }
 
 /* flex */
@@ -134,3 +143,185 @@ body {
     position: sticky;
     top: 10px;
 }
+
+/* website */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+.navbar {
+    background-color: #2e323f;
+}
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.main-nav > li > a {
+    display: inline-block;
+    padding: 12px 16px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 18px;
+}
+.brand-logo > a {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+}
+.hero {
+    background-color: #3B4050;
+}
+.hero-container {
+    padding: 4rem 0;
+    display: flex;
+    align-items: flex-end;
+}
+.hero-container > h1 {
+    font-size: 90px;
+    color: white;
+    flex: 0 0 45%;
+    line-height: 1;
+    margin: 0;
+}
+.hero-container > h1 > span {
+    color: #a59678;
+    font-family: 'Oswald', sans-serif;
+}
+.hero-right {
+    padding: 0 2rem;
+}
+.hero-right > p {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    line-height: 1.6;
+}
+.hero-right > button {
+    padding: 0.7em 1.5em;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    border-radius: 50px;
+    background-color: #a59678;
+    color: white;
+    box-shadow: none;
+    text-shadow: none;
+    outline: none;
+    border: 1px solid #a59678;
+    text-transform: uppercase;
+}
+.services {
+    background-color: rgba(241, 241, 241, 1);
+    padding: 4em 0;
+}
+.services-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2em;
+}
+.services-container > div {
+    text-align: center;
+}
+.services-container > div > h3 {
+    color: #a59678;
+    font-family: 'Oswald', sans-serif;
+    margin: 0 0 1em;
+    font-size: 30px;
+}
+.services-container > div > p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+.gallery {
+    padding: 4em 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+.title {
+    font-size: 36px;
+    font-family: 'Oswald', sans-serif;
+    margin: 0 0 24px;
+    color: #a59678;
+}
+.gallery-left {
+    flex: 0 0 65%;
+}
+.gallery-left p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+}
+.gallery-right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.gallery-right > div {
+    background: #3b4050;
+    padding: 2em 3em;
+    text-align: center;
+}
+.gallery-right > div > h3 {
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    margin: 0 0 20px;
+    color: white;
+}
+.gallery-right > div > p {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(241, 241, 241, 1);
+}
+.footer {
+    background-color: #3B4050;
+    padding: 4em 0;
+}
+.footer-title {
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: 40% repeat(3, 20%);
+    gap: 30px;
+}
+.footer-grid h4 {
+    font-size: 21px;
+    color: #a59678;
+    font-family: 'Oswald', sans-serif;
+    margin: 0 0 20px;
+}
+.footer-grid p {
+    font-size: 16px;
+    color: rgba(241, 241, 241, 0.5);
+    font-family: 'Montserrat', sans-serif;
+}
+.footer-grid ul {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    color: rgba(241, 241, 241, 0.5);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-grid a {
+    font-size: 16px;
+    color: rgba(241, 241, 241, 0.5);
+    font-family: 'Montserrat', sans-serif;
+}
+/* media queries */

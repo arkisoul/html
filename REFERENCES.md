@@ -19,6 +19,9 @@
 - CSS-tricks complete guide to Flexbox [here](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - CSS-tricks complete guide to Grid [here](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
+### Responsive layouts
+- Media queries [here](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries)
+
 ## Handy resources
 - Here you can check the support for any CSS property [here](https://caniuse.com)
 - Here you can find some of the best articles and tricks related to css [here](https://css-tricks.com)
