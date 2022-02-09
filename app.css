@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap");
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
+*/
+body {
+  background-color: aliceblue;
+  margin: 0;
+  color: blueviolet;
+  font-family: "Oswald", sans-serif;
+}
+a {
+  text-decoration: none;
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* main {
+  background: black url("bg.jpg") no-repeat fixed;
+  background-size: cover;
+} */
+/* aside {
+  background-image: linear-gradient(rgb(79, 170, 255), rgb(201, 201, 201));
+  background-image: radial-gradient(blue, green);
+  color: red;
+  border: 3px solid;
+  padding: 20px 10px 40px 30px;
+  box-sizing: border-box;
+  margin: 20px;
+  box-shadow:
+    0px 2px 0px black,
+    0px 6px 0px white,
+    0px 12px 0px blue,
+    0px 18px 0px orange;
+} */
+/* section::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.main-content {
+    float: left;
+    width: 80%;
+}
+.sidebar {
+    float: right;
+    width: 20%;
+} */
+.desk {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 16px;
+}
