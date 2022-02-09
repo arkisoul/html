@@ -79,16 +79,58 @@ body {
 .box {
     margin: 20px;
     border: 4px solid blue;
+
+    position: relative;
 }
 .inner-box {
     width: 400px;
-    height: 250px;
+    height: 100px;
     background-color: blanchedalmond;
     border: 3px double black;
+    position: relative;
+
+    top: 10px;
+    left: 20px;
 }
 .second-inner {
-    width: 300px;
+    width: 200px;
     height: 150px;
     background-color: orange;
     border: 2px dashed black;
+
+    position: absolute;
+    top: 10px;
+    left: 80px;
+}
+.another-box {
+    /* margin: 20px; */
+    border: 4px solid darkmagenta;
+    /* position: fixed; */
+    background-color: beige;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.another-box .second-inner {
+    background-color: aquamarine;
+}
+.section {
+    display: flex;
+    align-items: flex-start;
+    border: 2px solid violet;
+    margin: 20px 0;
+    /* position: relative; */
+}
+.main {
+    flex: 0 0 65%;
+    background-color: #f5f9f5;
+    border-right: 2px solid black;
+}
+.aside {
+    flex: 1 1 auto;
+    background-color: cornsilk;
+    padding: 20px;
+    position: sticky;
+    top: 10px;
 }
