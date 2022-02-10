@@ -1,27 +1,25 @@
-const bool = true;
-// truty values ex. true, any number that is not zero, "a", [], {}, 
-// falsy values ex. false, 0, '', undefined, null
-const falsy = 1;
-if(falsy) {
-    console.log("not a falsy value", falsy);
-} else {
-    console.log('falsy value', falsy)
-}
-const str = "The quick fox jump over the top";
-console.log(str.substr(4, 5));
+const x = 100;
+const y = 20;
 
-/**
- * Problem statement string
- * 
- * 1. create a string
- * 2. convert that string into title case
- * 
- * ex. hello
- * Hello
- * 
- * HELLO
- * Hello
- * 
- * heLLo
- * Hello
- */
+console.log(x + y);
+console.log(x - y);
+console.log(x * y);
+console.log(x / y);
+console.log(x % y);
+console.log(x ** 2);
+console.log(x < y)
+console.log(x > y)
+console.log(x <= y)
+console.log(x >= y)
+console.log('x == "100"', x == "100");
+console.log(x != y)
+console.log('x === "100"', x === "100")
+console.log(x !== y)
+console.log(10 === 20 && 20 === 20)
+console.log(10 === 20 || 30 === 20)
+console.log(!(10 === 20));
+let z = 100;
+console.log(z--);
+console.log(z);
+// const str = new String("a beautiful string")
+// console.log("str" instanceof String)
