@@ -1,25 +1,38 @@
-const x = 100;
-const y = 20;
-
-console.log(x + y);
-console.log(x - y);
-console.log(x * y);
-console.log(x / y);
-console.log(x % y);
-console.log(x ** 2);
-console.log(x < y)
-console.log(x > y)
-console.log(x <= y)
-console.log(x >= y)
-console.log('x == "100"', x == "100");
-console.log(x != y)
-console.log('x === "100"', x === "100")
-console.log(x !== y)
-console.log(10 === 20 && 20 === 20)
-console.log(10 === 20 || 30 === 20)
-console.log(!(10 === 20));
-let z = 100;
-console.log(z--);
-console.log(z);
-// const str = new String("a beautiful string")
-// console.log("str" instanceof String)
+// loops
+// for, while, do while, for in, for of
+let counter = 0
+while(true) {
+    if(counter === 10) {
+        break;
+    }
+    console.log('Hello world')
+    counter++;
+}
+console.log("after while");
+do {
+    console.log('Hello world')
+    counter++;
+} while(counter < 10)
+console.log('after do while')
+for (let index = 0; index < 10; index++) {
+    if(index === 4) {
+        continue;
+    }
+    for (let j = 0; j < index; j++) {
+        if(index === 5) {
+            break;
+        }
+        console.log(`${index} | ${j}`);
+    }
+    console.log(index)
+}
+for (const fruit of ["mango", "orange", "grapes", "strawberry"]) {
+    console.log(fruit)
+}
+const person = {name: 'John Doe', age: 25};
+for (const [key, value] of Object.entries(person)) {
+    console.log(key, value)
+}
+for (const key in person) {
+    console.log(person[key])
+}
