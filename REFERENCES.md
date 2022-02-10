@@ -27,3 +27,7 @@
 - Here you can find some of the best articles and tricks related to css [here](https://css-tricks.com)
 - Bubbly [here](https://projects.verou.me/bubbly/)
 - Clippy [here](https://bennettfeely.com/clippy/)
+
+## Javascript
+- Operators precedence [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+- Operators [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)
