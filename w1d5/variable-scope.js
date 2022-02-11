@@ -2,13 +2,13 @@ function demoFun() {
   let param = 20;
   function funFun() {
     let fun = 40;
-    console.log('funFun ', param, fun);
+    console.log("funFun ", param, fun);
     function javaFun() {
       console.log("javaFun ", param, fun);
     }
-    javaFun()
+    javaFun();
   }
   funFun();
-  console.log('demoFun ', param, fun);
+  console.log("demoFun ", param, fun);
 }
 demoFun();
