@@ -1,11 +1,8 @@
 // loops
 // for, while, do while, for in, for of
 let counter = 0
-while(true) {
-    if(counter === 10) {
-        break;
-    }
-    console.log('Hello world')
+while(counter) {
+    console.log('Hello world in while loop')
     counter++;
 }
 console.log("after while");
@@ -14,7 +11,7 @@ do {
     counter++;
 } while(counter < 10)
 console.log('after do while')
-for (let index = 0; index < 10; index++) {
+for (let index = 10; index >= 0; index--) {
     if(index === 4) {
         continue;
     }
@@ -26,7 +23,8 @@ for (let index = 0; index < 10; index++) {
     }
     console.log(index)
 }
-for (const fruit of ["mango", "orange", "grapes", "strawberry"]) {
+const fruits =  ["mango", "orange", "grapes", "strawberry"];
+for (const fruit of fruits) {
     console.log(fruit)
 }
 const person = {name: 'John Doe', age: 25};

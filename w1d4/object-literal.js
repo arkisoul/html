@@ -14,7 +14,14 @@ const person = {
     country: "India",
     pincode: 400078,
   },
+  describe: function () {
+    return "Describe function in object";
+  },
 };
+
+console.log(person.describe());
+console.log(person["describe"]());
+
 console.log(person.name);
 console.log(person.hobbies[0]);
 console.log(person.address.pincode);

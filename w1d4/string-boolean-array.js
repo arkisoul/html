@@ -43,3 +43,18 @@ const shifted = numbers.shift();
 console.log(numbers, shifted);
 console.log(numbers.indexOf(10));
 console.log(numbers.join(" | "));
+
+
+const arr = [
+  "array",
+  true,
+  undefined,
+  null,
+  10,
+  { name: "John Doe" },
+  [1000],
+  function () {
+    console.log("In array");
+  },
+];
+console.log(arr[7]());
