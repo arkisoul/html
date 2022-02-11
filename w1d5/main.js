@@ -1,19 +1,12 @@
-const a = 10;
-let result;
-if (a > 100) {
-  result = "A is greater than 100";
-} else {
-  result = "A is less than 100";
+function add10(x) {
+  const total = x + 10;
+  return total;
+  console.log(total, isNaN(total));
 }
-// ternary operator
-// condition ? value if condition is true : value if condition is false;
-const b = a > 100 ? "A is greater than 100" : "A is less than 100";
-console.log(result, b);
+const a0 = add10(20); // 30
+const a1 = add10(40); // 50
+const a2 = add10(90); // 100
+const a3 = add10(); // no error for missing parameter
 
-const c =
-  a > 100
-    ? "A is greater than 100"
-    : (a < 0
-    ? "A is negative"
-    : "A is a positive number");
-console.log(c);
+const sum = add10(20);
+console.log(add10(20), sum);
