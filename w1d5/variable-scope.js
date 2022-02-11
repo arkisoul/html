@@ -12,3 +12,17 @@ function demoFun() {
   console.log("demoFun ", param, fun);
 }
 demoFun();
+
+function testFun(param) {
+  function funFun() {
+    let fun = 40;
+    console.log("funFun ", param, fun);
+    function javaFun() {
+      console.log("javaFun ", param, fun);
+    }
+    javaFun();
+  }
+  funFun();
+  console.log("testFun ", param);
+}
+testFun(20);
