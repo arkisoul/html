@@ -31,3 +31,5 @@
 ## Javascript
 - Operators precedence [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
 - Operators [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)
+- Future reference for object [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty)
+- ES6 clsses (a syntactic sugar on prototypal inheritence) [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
