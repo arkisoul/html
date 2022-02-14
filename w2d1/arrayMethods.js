@@ -11,9 +11,9 @@ const reversed = nums.reverse();
 console.log(reversed, nums);
 const numbers = [39, 12, 48, 29, 84, 36, 75, 45, 51];
 const sorted = numbers.sort((a, b) => {
-  if (a < b) return -1;
+  if (a < b) return 1;
   if (a === b) return 0;
-  return 1;
+  return -1;
 });
 console.log(numbers, sorted);
 const filtered = numbers.filter((element) => element > 35 && element < 55);
