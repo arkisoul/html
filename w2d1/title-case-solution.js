@@ -25,3 +25,17 @@ const r6 = toTitleCase("heLLo WORLD")
 console.log(r6);
 const r7 = toTitleCase("the quick laZy fox jumP over tHe box");
 console.log(r7);
+console.log(new String("a simple string"));
+String.prototype.toTitleCase = function () {
+    const words = str.split(" ");
+    const titleCaseWords = [];
+    for (const word of words) {
+      const titleCaseWord =
+        word[0].toUpperCase() + word.substring(1).toLowerCase();
+      titleCaseWords.push(titleCaseWord);
+    }
+    const titleCaseStr = titleCaseWords.join(" ");
+    return titleCaseStr;
+};
+
+console.log("the quick laZy fox jumP over tHe box".toTitleCase());
