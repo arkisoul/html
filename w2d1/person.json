@@ -1,0 +1,12 @@
+{
+  "name": "Jane Doe",
+  "age": 26,
+  "isMarried": true,
+  "income": null,
+  "address": {
+    "street": "MG Road",
+    "city": "Mumbai",
+    "pincode": 400078
+  },
+  "hobbies": ["Coding", "Contests", "Reading", "Writing"]
+}
